@@ -1,3 +1,17 @@
+# About this fork
+This fork is based on [v0.0.8](https://github.com/comfyanonymous/ComfyUI/releases/tag/v0.0.8) for the following purposes:
+1. Use nvidia+cuda GPU on windows 11 platform
+2. Use AMD+directml on windows 11 platform
+
+# What are the modifications?
+1. a `run-directml.bat` is added to apply suitable parameters when starting the main script
+2. `torch-directml` package is added to the builtin library.
+
+One can manually install corresponding library to your existing ComfyUI distribution by:
+```bash
+.\python_embeded\python.exe -m pip install torch-directml
+```
+
 ComfyUI
 =======
 The most powerful and modular stable diffusion GUI and backend.
